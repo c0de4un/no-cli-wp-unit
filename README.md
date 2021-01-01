@@ -1,2 +1,11 @@
-# no-cli-wp-unit
-Snippet for WordPress PHPUnit config &amp; struct without wp-cli or other utils
+# WordPress PHPUnit Structure Snippet
+Отличие от WP-CLI + PHPUnit:
+ - нет проблем с запуском на Windows;
+ - не нужно скачивать WordPress-Core в temp-каталог, как
+ при вызове wp-cli install;
+ - одна версия исходников плагина и две версии WordPress$
+ - легко запустить тест всех нужных плагинов, изменив
+ используемый конфиг PHPUnit;
+
+Недостатки:
+ - необходимость управления окончанием тестов (установка, очистка БД);

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<phpunit
+	bootstrap="tests/bootstrap-wp.php"
+	backupGlobals="false"
+	colors="true"
+	convertErrorsToExceptions="true"
+	convertNoticesToExceptions="true"
+	convertWarningsToExceptions="true"
+	>
+	<php>
+		<const name="TEST_DOMAIN_URL" value="http://mydomain.local"/>
+	</php>
+	<testsuites>
+		<testsuite name="ebids.core">
+			<directory prefix="test-" suffix=".php">./</directory>
+			<exclude>./test-sample.php</exclude>
+			<exclude>tests/QTest.php</exclude>
+		</testsuite>
+	</testsuites>
+</phpunit>
